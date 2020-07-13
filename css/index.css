@@ -16,7 +16,8 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+    /* remove due bug causing extra margin under footer */
+	/* margin: 0; */
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -28,9 +29,46 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+.button{
+    margin: 4% 0;
+    border-radius: 13%;
+    padding: 2% 3.5%;
+    background-color: white;
+    /* removes uneven shades of black */
+    border: 2px solid black;
+}
+
+figure{
+    width: 45%;
+    border-bottom: 1px dashed black;
+    margin: 2% 0;
+}
+
+figure h2{
+    margin: 4% 0;
+}
+
+header{
+    margin: 4% 0;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    align-items: center;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+}
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -66,9 +104,54 @@ p {
     line-height: 1.4;
 }
 
+.about-middle-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.box1{
+    background-color: teal;
+}
+
+.box2{
+    background-color: gold;
+}
+.box3{
+    background-color: cadetblue;
+}
+.box4{
+    background-color: coral;
+}
+.box5{
+    background-color: crimson;
+}
+.box6{
+    background-color: forestgreen;
+}
+.box7{
+    background-color: darkorchid;
+}
+.box8{
+    background-color: hotpink;
+}
+.box9{
+    background-color: indigo;
+}
+.box10{
+    background-color: dodgerblue;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0;
 }
 
 .top-content {
@@ -77,6 +160,11 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.top-content .about-text-container {
+    padding: 0 1%;
+    padding-bottom: 20px;  
 }
 
 .top-content .text-container {
@@ -104,7 +192,7 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
